@@ -84,7 +84,6 @@ class someclass:
                 if arr[j][i] != 0:
                     a.append(arr[j][i])
                     c = c + 1
-            print(a)
             if c == 0:
                 continue
             for j in range(c):
@@ -93,23 +92,13 @@ class someclass:
                 if a[j] == a[j+1]:
                     a[j] = 2 * a[j]
                     a[j+1] = 0
-            print("**",a)
             d = 0
             for j in range(c):
                 if a[j] != 0:
                     arr[j][i] = a[j]
                     d = d + 1
-                    print("+++",arr[j][i],"+++",j,i)
-            print("////////////////////////////////////////////////////////////////")
-            for k in range(4):
-                print(arr[k])
-            print("///////////////////////////////////////////////////////////////")
             for j in range(d,4):          
                 arr[j][i] = 0
-        print("----------------------------------------------------------------")
-        for k in range(4):
-            print(arr[k])
-        print("----------------------------------------------------------------")
         pass
     def movedown(self, arr:int):
         for i in range(4):
